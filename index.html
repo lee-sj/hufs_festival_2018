@@ -49,7 +49,7 @@
     function initialize() {
       var filter = "win16|win32|win64|mac";
       if(navigator.platform){
-        if(0 < filter.indexOf(navigator.platform.toLowerCase())) {
+        if(0 > filter.indexOf(navigator.platform.toLowerCase())) {
           location.href = "http://festival.hufsglobal.info/sorry_pc" ;
         }
       }
