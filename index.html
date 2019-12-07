@@ -43,28 +43,15 @@
   
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfbFv9IAXMH3ym7cTHQJ0MXWxq5BiQ1qU" type="text/javascript"></script>
   
-  
-  <!-- <script type="text/javascript">
-    function initialize() {
-      var filter = "win16|win32|win64|mac|macintel";
-      if( navigator.platform  ){
-              if( filter.indexOf(navigator.platform.toLowerCase())<0 ){
-                  location.href = "https://festival2018.herokuapp.com/sorry_pc.html";
-              }
-      } 
-    }
-  </script> -->
-
-
   <script type="text/javascript">
 
     function initialize() {
-      // var filter = "win16|win32|win64|mac|MacIntel";
-      // if(navigator.platform){
-      //   if(0 < filter.indexOf(navigator.platform.toLowerCase())) {
-      //     location.href = "https://festival2018.herokuapp.com/sorry_pc.html" ;
-      //   }
-      // }
+      var filter = "win16|win32|win64|mac|macintel";
+      if( navigator.platform  ){
+              if( filter.indexOf(navigator.platform.toLowerCase())>0 ){
+                  location.href = "http://m.naver.com";
+              }
+      }
       
       var map;
       var bounds = new google.maps.LatLngBounds();
